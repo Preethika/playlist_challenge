@@ -69,6 +69,19 @@ module.exports = function createApp(options) {
             data = library.getSong(id);
             return { album: data.album, duration: data.duration, title: data.title, id: data.id, artist: data.artist };
         },
+        //getPlaylists - return in the format {playlists : <data>}
+        playlists: (data) => {
+
+            library.getPlaylists(function (err, playlists) {
+                console.log('playlists - ', playlists);
+                return { playlists: playlists }; //if we return in this line this will go the callback in songs.js(line 99)
+            });
+
+            // // below commented line is working fine
+            // let playlists = [{ "id": 4, "name": "Ali Alizada", "songs": [31, 56, 1, 7, 0] },
+            // { "id": 5, "name": "Ali Alizada1", "songs": [7, 0] }];
+            // return { playlists: playlists };
+        },
         //getPlaylist
         playlist: (data) => {
             var id = parseInt(data.id, 10);
