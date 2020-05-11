@@ -1,0 +1,84 @@
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(38, 38, 38);
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: #8f8f8f;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 0;
+  text-decoration: none;
+  font-size: 25px;
+  color: #8f8f8fd4;
+  display: block;
+  /* margin-left:-50px; */
+}
+
+.sidenav a:hover,
+i:hover {
+  color: #f1f1f1;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+ul {
+  list-style: none;
+  font-size: 1.2em;
+}
+li {
+  height: 40px;
+  width: 90%;
+  padding: 8px;
+  background-color: rgb(61, 60, 60);
+  border-bottom: 0.5px solid rgb(85, 84, 84);
+}
+li:first-child {
+  border-radius: 5px 5px 0 0;
+}
+li:last-child {
+  border-radius: 0 0 5px 5px;
+  border: none;
+}
+
+.playlists {
+  margin-left: -30px; 
+  height: 80%;
+  overflow: scroll;
+}
+.createPlaylist{
+  margin-top:20px;
+}
+.createPlaylistBtn {
+  padding: 10px;
+  border-radius: 5px;
+  border-color: rgb(114, 113, 113);
+  background-color: rgba(141, 140, 140, 0.5);
+  color: rgb(194, 193, 193);
+}
+.createPlaylistBtn i {
+  color: rgb(194, 193, 193);
+}
+.createPlaylistBtn span {
+  font-size: 1.4em;
+}
+.createPlaylist input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border-color: rgb(114, 113, 113);
+  background-color: rgba(141, 140, 140, 0.5);
+  color: rgb(194, 193, 193);
+  font-size: 1.1em;
+}

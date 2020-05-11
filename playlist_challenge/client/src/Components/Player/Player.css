@@ -1,0 +1,16 @@
+.player {
+    background-color: rgb(15, 15, 15);
+    width: calc(100% - 250px);
+    color: snow;
+    font-size: 1em;
+    text-align: left;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+}
+audio {
+    width: 80%;
+    display: block;
+    margin: auto;
+}

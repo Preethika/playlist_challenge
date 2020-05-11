@@ -1,0 +1,117 @@
+body {
+    /* background-color: #fff;
+    color: rgb(54, 54, 54); */
+    background-color: #000;
+    color: rgb(189, 187, 187);
+    margin-left: 250px;
+}
+.song {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 1.3em;
+}
+.song .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.song .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.5);
+}
+.song .card-img {
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    width: 100%;
+    background: #25e4cf;
+    background: -webkit-radial-gradient(center, #25e4cf, #e4e6ed);
+    background: -moz-radial-gradient(center, #25e4cf, #e4e6ed);
+    background: radial-gradient(ellipse at center, #25e4cf, #e4e6ed);
+}
+.song .container {
+    height: 30px;
+    padding: 10px 16px;
+    background-color: rgb(82, 80, 80);
+    font-size: larger;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+.song .container:hover {
+    background-color: rgb(88, 88, 88);
+}
+.song .container:hover i {
+    color: black;
+}
+.song .details {
+    margin-top: 35px;
+    text-align: left;
+}
+.song .card-title {
+    font-size: 1.3em;
+}
+.song .card-album {
+    font-size: 1em;
+}
+.song .card-duration {
+    font-size: 0.7em;
+    color: rgb(112, 112, 112);
+    margin-left: 13px;
+}
+.song .card-artist {
+    font-size: 1em;
+}
+.song .play {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(82, 80, 80);
+    color: #fff;
+    font-size: 1em;
+    margin-top:20px;
+}
+
+li {
+    list-style: none;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.popup_inner {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 20%; 
+    margin: auto;
+    background: white;
+    border-radius: 5px;
+    padding: 30px;
+}
+.popup_inner .header{
+    color:rgb(73, 73, 73);
+    display: flex;
+    justify-content: space-between;
+}
+.popup_inner .header i {
+    margin-top:20px ;
+}
+ul li{
+    cursor: pointer;
+} 
+.choosePlaylist{
+    height: 400px;
+    overflow: scroll;
+}

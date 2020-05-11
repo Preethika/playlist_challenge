@@ -1,0 +1,10 @@
+ul li{
+    cursor: pointer;
+}
+ul{
+    margin:0;
+}
+.choosePlaylist{
+    height: 300px;
+    overflow: scroll;
+}
